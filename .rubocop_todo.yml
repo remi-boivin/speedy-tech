@@ -12,7 +12,7 @@
 # Include: **/*.gemfile, **/Gemfile, **/gems.rb
 Bundler/OrderedGems:
   Exclude:
-    - 'Gemfile'
+    - "Gemfile"
 
 # Offense count: 4
 # Cop supports --auto-correct.
@@ -20,13 +20,13 @@ Bundler/OrderedGems:
 # SupportedStyles: leading, trailing
 Layout/DotPosition:
   Exclude:
-    - 'bin/yarn'
+    - "bin/yarn"
 
 # Offense count: 6
 # Cop supports --auto-correct.
 Layout/EmptyLineAfterGuardClause:
   Exclude:
-    - 'bin/bundle'
+    - "bin/bundle"
 
 # Offense count: 4
 # Cop supports --auto-correct.
@@ -34,7 +34,7 @@ Layout/EmptyLineAfterGuardClause:
 # SupportedStyles: aligned, indented, indented_relative_to_receiver
 Layout/MultilineMethodCallIndentation:
   Exclude:
-    - 'bin/yarn'
+    - "bin/yarn"
 
 # Offense count: 1
 # Cop supports --auto-correct.
@@ -42,7 +42,7 @@ Layout/MultilineMethodCallIndentation:
 # SupportedStyles: aligned, indented
 Layout/MultilineOperationIndentation:
   Exclude:
-    - 'bin/bundle'
+    - "bin/bundle"
 
 # Offense count: 2
 # Cop supports --auto-correct.
@@ -51,7 +51,7 @@ Layout/MultilineOperationIndentation:
 # SupportedStylesForEmptyBrackets: space, no_space
 Layout/SpaceInsideArrayLiteralBrackets:
   Exclude:
-    - 'config/environments/production.rb'
+    - "config/environments/production.rb"
 
 # Offense count: 1
 # Cop supports --auto-correct.
@@ -59,7 +59,7 @@ Layout/SpaceInsideArrayLiteralBrackets:
 # SupportedStyles: final_newline, final_blank_line
 Layout/TrailingEmptyLines:
   Exclude:
-    - 'Gemfile'
+    - "Gemfile"
 
 # Offense count: 1
 # Configuration parameters: IgnoredMethods.
@@ -70,6 +70,8 @@ Metrics/CyclomaticComplexity:
 # Configuration parameters: CountComments, CountAsOne, ExcludedMethods, IgnoredMethods.
 Metrics/MethodLength:
   Max: 13
+  Exclude:
+    - 'db/migrate/20210912160505_devise_create_users.rb'
 
 # Offense count: 1
 # Configuration parameters: IgnoredMethods.
@@ -80,23 +82,23 @@ Metrics/PerceivedComplexity:
 # Cop supports --auto-correct.
 Style/BlockComments:
   Exclude:
-    - 'spec/spec_helper.rb'
+    - "spec/spec_helper.rb"
 
 # Offense count: 3
 # Configuration parameters: AllowedConstants.
 Style/Documentation:
   Exclude:
-    - 'spec/**/*'
-    - 'test/**/*'
-    - 'app/helpers/application_helper.rb'
-    - 'app/models/application_record.rb'
-    - 'config/application.rb'
+    - "spec/**/*"
+    - "test/**/*"
+    - "app/helpers/application_helper.rb"
+    - "app/models/application_record.rb"
+    - "config/application.rb"
 
 # Offense count: 1
 # Cop supports --auto-correct.
 Style/ExpandPathArguments:
   Exclude:
-    - 'bin/bundle'
+    - "bin/bundle"
 
 # Offense count: 37
 # Cop supports --auto-correct.
@@ -109,33 +111,33 @@ Style/FrozenStringLiteralComment:
 # Cop supports --auto-correct.
 Style/GlobalStdStream:
   Exclude:
-    - 'config/environments/production.rb'
+    - "config/environments/production.rb"
 
 # Offense count: 2
 # Cop supports --auto-correct.
 Style/IfUnlessModifier:
   Exclude:
-    - 'bin/bundle'
+    - "bin/bundle"
 
 # Offense count: 1
 # Cop supports --auto-correct.
 # Configuration parameters: InverseMethods, InverseBlocks.
 Style/InverseMethods:
   Exclude:
-    - 'bin/yarn'
+    - "bin/yarn"
 
 # Offense count: 1
 # Cop supports --auto-correct.
 Style/PerlBackrefs:
   Exclude:
-    - 'bin/bundle'
+    - "bin/bundle"
 
 # Offense count: 2
 # Cop supports --auto-correct.
 # Configuration parameters: SafeForConstants.
 Style/RedundantFetchBlock:
   Exclude:
-    - 'config/puma.rb'
+    - "config/puma.rb"
 
 # Offense count: 1
 # Cop supports --auto-correct.
@@ -148,7 +150,7 @@ Style/SpecialGlobalVars:
 # Cop supports --auto-correct.
 Style/StderrPuts:
   Exclude:
-    - 'bin/yarn'
+    - "bin/yarn"
 
 # Offense count: 63
 # Cop supports --auto-correct.

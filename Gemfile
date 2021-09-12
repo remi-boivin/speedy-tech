@@ -36,6 +36,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 5.0.1'
   gem 'better_errors', '~> 2.6.0'
   gem 'faker', '~> 2.10.0'
+  gem 'mailcatcher'
 end
 
 group :development do
