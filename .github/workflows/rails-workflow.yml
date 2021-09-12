@@ -34,4 +34,4 @@ jobs:
 
       - name: Run linters
         run: |
-          rubocop --parallel
+          rubocop -c .rubocop.yml --require rubocop-rails --parallel
