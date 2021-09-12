@@ -3,7 +3,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Ruby
+name: Rails workflow
 
 on:
   push:
@@ -12,7 +12,7 @@ on:
     branches: [ master ]
 
 jobs:
-  test:
+  rails-workflow:
 
     runs-on: ubuntu-latest
 
