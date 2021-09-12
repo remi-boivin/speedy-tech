@@ -63,7 +63,13 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "speedy_tech_production"
 
   config.action_mailer.perform_caching = false
-
+  if Rails.env.staging?
+    config.action_mailer.default_url_options = { host: 'https://speedy-tech-staging.herokuapp.com/', port: 80 }
+  else
+    config.action_mailer.default_url_options = { host: 'https://speedy-tech-prod.herokuapp.com/', port: 80 }
+  end
+  # application.rb or config/environments specific settings, which take precedence
+  config.action_mailer.delivery_method = :mailjet
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
