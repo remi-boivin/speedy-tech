@@ -72,6 +72,8 @@ Layout/LineLength:
   Max: 100
   IgnoredPatterns:
     - !ruby/regexp /\A +(it|describe|context|shared_examples|include_examples|it_behaves_like) ["']/
+  Exclude:
+    - 'db/migrate/20210912160505_devise_create_users.rb'
 
 Lint/InterpolationCheck:
   Exclude:
@@ -101,7 +103,7 @@ Metrics/ModuleLength:
     - 'spec/**/*.rb'
 
 Naming/FileName:
-  FlaggedTerms:
+  Enabled:
     offence:
       Suggestions:
         - offense
